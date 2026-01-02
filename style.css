@@ -12,12 +12,19 @@ header{
     text-align:center;
 }
 
-header span{
+/* FIXED: span ➜ button */
+header button{
+    background:none;
+    border:none;
     color:white;
     margin:0 12px;
     cursor:pointer;
     font-size:18px;
     font-weight:bold;
+}
+
+header button:hover{
+    text-decoration: underline;
 }
 
 .section{
