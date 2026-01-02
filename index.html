@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online Book Store</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -9,19 +10,20 @@
 <body>
 
 <header>
-    <span onclick="showPage('home')">Home</span>
-    <span onclick="showPage('login')">Login</span>
-    <span onclick="showPage('register')">Register</span>
-    <span onclick="showPage('catalogue')">Catalogue</span>
-    <span onclick="showPage('cart')">Cart</span>
-    <span onclick="showPage('payment')">Payment</span>
+    <button type="button" onclick="showPage('home')">Home</button>
+    <button type="button" onclick="showPage('login')">Login</button>
+    <button type="button" onclick="showPage('register')">Register</button>
+    <button type="button" onclick="showPage('catalogue')">Catalogue</button>
+    <button type="button" onclick="showPage('cart')">Cart</button>
+    <button type="button" onclick="showPage('payment')">Payment</button>
 </header>
 
 <!-- HOME -->
 <div id="home" class="section">
     <h1>Welcome to Online Book Store</h1>
     <p>Read • Select • Purchase</p>
-    <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="220">
+    <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" 
+         width="220" alt="Books animation">
 </div>
 
 <!-- LOGIN -->
@@ -29,8 +31,8 @@
     <h2>Login</h2>
     <input type="text" placeholder="User ID"><br>
     <input type="password" placeholder="Password"><br>
-    <button>Login</button><br>
-    <button onclick="showPage('home')">Back</button>
+    <button type="button">Login</button><br>
+    <button type="button" onclick="showPage('home')">Back</button>
 </div>
 
 <!-- REGISTER -->
@@ -40,8 +42,8 @@
     <input type="tel" placeholder="Phone Number"><br>
     <input type="email" placeholder="Email ID"><br>
     <input type="password" placeholder="Password"><br>
-    <button>Register</button><br>
-    <button onclick="showPage('home')">Back</button>
+    <button type="button">Register</button><br>
+    <button type="button" onclick="showPage('home')">Back</button>
 </div>
 
 <!-- CATALOGUE -->
@@ -49,28 +51,28 @@
     <h2>Book Catalogue</h2>
 
     <div class="book">
-        <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg">
+        <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Don Quixote">
         <p>Don Quixote</p>
         <p>₹499</p>
-        <button onclick="addToCart('Don Quixote',499)">Add to Cart</button>
+        <button type="button" onclick="addToCart('Don Quixote',499)">Add to Cart</button>
     </div>
 
     <div class="book">
-        <img src="https://covers.openlibrary.org/b/id/7984916-L.jpg">
+        <img src="https://covers.openlibrary.org/b/id/7984916-L.jpg" alt="Harry Potter">
         <p>Harry Potter</p>
         <p>₹699</p>
-        <button onclick="addToCart('Harry Potter',699)">Add to Cart</button>
+        <button type="button" onclick="addToCart('Harry Potter',699)">Add to Cart</button>
     </div>
 
     <div class="book">
-        <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg">
+        <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="Atomic Habits">
         <p>Atomic Habits</p>
         <p>₹399</p>
-        <button onclick="addToCart('Atomic Habits',399)">Add to Cart</button>
+        <button type="button" onclick="addToCart('Atomic Habits',399)">Add to Cart</button>
     </div>
 
     <br>
-    <button onclick="showPage('home')">Back</button>
+    <button type="button" onclick="showPage('home')">Back</button>
 </div>
 
 <!-- CART -->
@@ -78,8 +80,8 @@
     <h2>Your Cart</h2>
     <ul id="cartItems"></ul>
     <p id="totalAmount"></p>
-    <button onclick="showPage('payment')">Proceed to Payment</button><br>
-    <button onclick="showPage('catalogue')">Back</button>
+    <button type="button" onclick="showPage('payment')">Proceed to Payment</button><br>
+    <button type="button" onclick="showPage('catalogue')">Back</button>
 </div>
 
 <!-- PAYMENT -->
@@ -94,10 +96,10 @@
         </div>
 
         <p>Scan QR to Pay</p>
-        <button>Confirm Payment</button>
+        <button type="button">Confirm Payment</button>
     </div>
 
-    <button onclick="showPage('cart')">Back</button>
+    <button type="button" onclick="showPage('cart')">Back</button>
 </div>
 
 <!-- QR Library -->
